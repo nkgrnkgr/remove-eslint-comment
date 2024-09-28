@@ -18,12 +18,11 @@ async function deleteLinesFromFile(path: string) {
     for await (const line of readLines(file)) {
         // 条件に応じて行をスキップ
         if (!shouldDeleteLine(line)) {
-            console.log("called");
             output.push(line);
         }
     }
     file.close();
-    await Deno.writeTextFile(path, output.join("\n"));
+    await Deno.writeTextFile(path, `${output.join("\n")}`);
 }
 
 async function readFilesRecursively(dir = ".", ignores: string[] = []) {
