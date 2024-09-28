@@ -31,6 +31,7 @@ async function readFilesRecursively(dir = ".", ignores: string[] = []) {
 
         // Skip if the path is in the ignore list
         if (ignores.some((ignore) => path.includes(ignore))) {
+            path.includes("generated") && console.log(`Ignoring ${path}`);
             continue;
         }
 
