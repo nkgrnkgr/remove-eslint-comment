@@ -1,0 +1,15 @@
+# Remove ESLint Comment
+
+このプロジェクトは、JavaScriptおよびTypeScriptファイルからESLintコメントを削除するユーティリティを提供します。コードを共有またはデプロイする前にクリーンアップするのに便利です。
+
+## 特徴
+
+- 指定されたファイルからすべてのESLintコメントを削除します。
+- JavaScriptおよびTypeScriptファイルをサポートします。
+- 使いやすいコマンドラインインターフェース。
+
+## 使い方
+
+```ts
+deno run scriopt.ts [your path]
+```
