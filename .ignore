@@ -1,0 +1,10 @@
+.next
+.vscode
+node_modules
+out
+test-results
+.dependency-cruiser.js
+.dependency-cruiser.result.json
+.eslintcache
+.tsconfig.tsbuildinfo
+**/generated/**
