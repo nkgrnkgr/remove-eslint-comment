@@ -8,4 +8,4 @@ test-results
 .dependency-cruiser.result.json
 .eslintcache
 .tsconfig.tsbuildinfo
-**/generated/**
+generated

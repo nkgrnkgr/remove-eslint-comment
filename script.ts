@@ -22,7 +22,7 @@ async function deleteLinesFromFile(path: string) {
         }
     }
     file.close();
-    await Deno.writeTextFile(path, `${output.join("\n")}`);
+    await Deno.writeTextFile(path, `${output.join("\n")}\n`);
 }
 
 async function readFilesRecursively(dir = ".", ignores: string[] = []) {
