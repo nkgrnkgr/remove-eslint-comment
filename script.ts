@@ -6,7 +6,8 @@ async function readIgnores() {
 }
 
 function shouldDeleteLine(line: string) {
-    return line.includes("eslint-disable");
+    const words = ["eslint-disable", "eslint-enable", "eslint react"];
+    return words.some((word) => line.includes(word));
 }
 
 async function deleteLinesFromFile(path: string) {
